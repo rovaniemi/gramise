@@ -33,6 +33,9 @@ dependencies {
     testCompile group: 'com.jayway.jsonpath', name: 'json-path', version:'2.2.0'
 }
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
 
 
 jacocoTestReport {
