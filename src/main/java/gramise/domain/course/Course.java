@@ -26,7 +26,7 @@ public class Course extends AbstractPersistable<Long> {
     @Max(1000)
     private int maxPoints;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "courses")
     private List<Exercise> exercises;
 
 

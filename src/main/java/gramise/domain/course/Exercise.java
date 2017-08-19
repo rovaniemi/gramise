@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import java.util.List;
 
@@ -19,8 +20,11 @@ public class Exercise extends AbstractPersistable<Long> {
     @Length(min = 1, max = 200)
     private String help;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = Exercise.class)
     private List<Word> words;
+
+    @ManyToMany
+    private List<Course> courses;
 
     public String getName() {
         return name;
