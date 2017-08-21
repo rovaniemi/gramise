@@ -49,6 +49,8 @@ public class TestingController {
         courseRepository.deleteAll();
         userRepository.deleteAll();
 
+        System.out.println("");
+
         model.addAttribute("entries", entries + " entries removed.");
         return "flush";
     }
