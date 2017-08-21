@@ -21,7 +21,6 @@ public class Course extends AbstractPersistable<Long> {
     @Length(min = 1, max = 100)
     private String description;
 
-    @NotBlank
     @Min(0)
     @Max(1000)
     private int maxPoints;

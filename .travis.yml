@@ -1,12 +1,5 @@
 language: java
 jdk:
 - oraclejdk8
-deploy:
-  provider: heroku
-  api_key:
-    secure: D699CHuJSqSvRlWk1jDFJT2u59RBdyTlOGHXvqw6HkK8RUkx54SwATqqlo3guFfuiV0t49mFZG1jW6cVBI/ipJxt3gYB+I6jBqG7I466ye/X5Q/JTkECsCPTjZPxieZx5m8bekJS1+fxM+LtjJwiqlmzDKwfvUmFLGde2hMkFBXbgXdM/qjwXbedpxVE4Wqyxy8/6jDazvOX8AXyFKhnz46jTkwSIATTOLYEn8XI2qnV2LbmdaMBHXmccinzaWjNNjY51Dh/9eGvvS3oUr/8wqGifRa2Uj/X1wUxelpeewNDOLOfBfNzWognNYPa9cjQNPGUv+DYHxQRQiuej/C1IpY/88KCeF3drAvKC44UmZzX6bt/hC88vq9RnrUTGtLFwk1BT6Dz2iazOtpTbrbEcsGlgxhO+usv4wZWYYudb1EffhqABPUBSQ/FaqvrGUrSxWtaSraBnacT6rs2+4d6oSm8wS5sFJCcHzdFRcZ7+bAv1ekr+5N7LqU4tsDms5lGjLyqW2BMymcu3fEU6pLiq0VzyplmoJzmTmkjg42YIFmgwUj/coYO8v44xZJDA9khUT9wyGw6Tm6Edr95ngn5dBLwah8Nn3oW8bIjQ61mkeDkJe5DR8jXj3+LOD9KlSUygoi1yMwrjJ7U27ktUKTlwOJSFElh0fsdFc2FQ/beONs=
-  app: gramise
-  on:
-    repo: rovaniemi/gramise
 after_success:
 - bash <(curl -s https://codecov.io/bash)
