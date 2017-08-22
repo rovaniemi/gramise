@@ -1,4 +1,4 @@
-package gramise.domain.user;
+package gramise.domain.person;
 
 import org.springframework.data.jpa.domain.AbstractPersistable;
 

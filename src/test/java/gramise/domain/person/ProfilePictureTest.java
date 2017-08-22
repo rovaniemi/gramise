@@ -1,12 +1,12 @@
-package gramise.domain.user;
+package gramise.domain.person;
 
 import org.junit.*;
 
 import static org.junit.Assert.assertTrue;
 
-public class UserTest {
+public class ProfilePictureTest {
 
-    public UserTest(){
+    public ProfilePictureTest(){
 
     }
 

@@ -1,4 +1,4 @@
-package gramise.domain.user;
+package gramise.domain.person;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.validation.constraints.Min;
 
 @Entity
-public class User extends AbstractPersistable<Long> {
+public class Person extends AbstractPersistable<Long> {
 
     @NotBlank
     @Length(min = 1, max = 35)
