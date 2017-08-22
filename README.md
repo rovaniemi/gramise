@@ -1,5 +1,8 @@
 # gramise
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/rovaniemi/osm-graph-parser/blob/master/LICENSE)
+![travis](https://travis-ci.org/rovaniemi/gramise.svg?branch=master)
+[![Code Coverage](https://img.shields.io/codecov/c/github/rovaniemi/gramise/master.svg)](https://codecov.io/github/rovaniemi/gramise)
+[![License: GPL v3](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/rovaniemi/gramise/blob/master/LICENSE)
+
 
 Grammar game, built with Java Spring
 
